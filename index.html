@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0c10">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300e5ff'/%3E%3Cstop offset='.5' stop-color='%232f5bff'/%3E%3Cstop offset='1' stop-color='%238a3cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='%23fff'%3ETC%3C/text%3E%3C/svg%3E">
+
+  <title>TaurusCorp | Everyday wellness webapps for men</title>
+  <meta name="description" content="TaurusCorp builds educational webapps on daily routines, lower-sugar eating, home workouts and sleep habits. Instant access after payment.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://vsalestech.shop">
+  <meta property="og:title" content="TaurusCorp | Everyday wellness webapps for men">
+  <meta property="og:description" content="Educational webapps on routine, eating, home workouts and habits. Instant access after payment.">
+  <meta property="og:site_name" content="TaurusCorp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TaurusCorp",
+    "legalName": "vSales Tech LLC",
+    "url": "https://vsalestech.shop",
+    "email": "vsalestech.llc@gmail.com",
+    "telephone": "+55 74 99957-4249",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "525 Randall Ave, Ste 100-411",
+      "addressLocality": "Cheyenne",
+      "addressRegion": "WY",
+      "postalCode": "82001",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0a0c10;
+      --bg-2: #0e1117;
+      --surface: #131821;
+      --surface-2: #19202b;
+      --text: #eef1f4;
+      --muted: #9aa3ae;
+      --muted-2: #6e7782;
+      --gold: #3f6bff;
+      --gold-2: #6fd6ff;
+      --sage: #7fe0c4;
+      --violet: #8a3cff;
+      --brand-grad: linear-gradient(135deg, #00e5ff 0%, #2f5bff 50%, #8a3cff 100%);
+      --line: rgba(255,255,255,.09);
+      --line-2: rgba(255,255,255,.16);
+      --container: 1180px;
+      --header-h: 74px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--bg); scroll-padding-top: calc(var(--header-h) + 16px); }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      overflow-x: hidden;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 88% 6%, rgba(63,107,255,.09), transparent 28%),
+        var(--bg);
+      font-family: "Manrope", system-ui, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--gold); color: #fff; }
+    :focus-visible { outline: 2px solid var(--gold-2); outline-offset: 4px; border-radius: 6px; }
+
+    .container { width: min(calc(100% - 40px), var(--container)); margin-inline: auto; }
+    .block { padding: clamp(80px, 9vw, 132px) 0; }
+    .block-alt { background: var(--bg-2); border-block: 1px solid var(--line); }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      line-height: 1.05;
+      letter-spacing: -.035em;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(2.7rem, 6vw, 5.4rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3.6rem); max-width: 18ch; }
+    h3 { font-size: clamp(1.2rem, 1.8vw, 1.5rem); letter-spacing: -.02em; }
+    p { margin: 0; color: var(--muted); max-width: 66ch; }
+
+    .kicker {
+      display: block;
+      margin-bottom: 16px;
+      color: var(--gold-2);
+      font-size: .95rem;
+      font-weight: 700;
+    }
+
+    .lead { margin-top: 20px; font-size: 1.05rem; }
+
+    /* Header */
+    .header {
+      position: fixed; inset: 0 0 auto 0; z-index: 1000;
+      height: var(--header-h);
+      background: rgba(10,12,16,.88);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+    .nav { height: 100%; display: flex; align-items: center; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; }
+
+    .logo {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.35rem; font-weight: 700; letter-spacing: -.03em;
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .logo::before {
+      content: "TC";
+      display: grid; place-items: center;
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      background: var(--brand-grad);
+      color: #fff;
+      font-size: .9rem; letter-spacing: -.04em;
+      box-shadow: 0 6px 18px rgba(63,107,255,.35);
+    }
+    .logo em {
+      font-style: normal;
+      background: var(--brand-grad);
+      -webkit-background-clip: text; background-clip: text;
+      color: transparent;
+    }
+    .logo-icon {
+      display: grid; place-items: center;
+      width: 26px; height: 26px; border-radius: 8px;
+      background: var(--brand-grad); color: #fff;
+      font-family: "Space Grotesk", sans-serif; font-size: .7rem; font-weight: 700;
+    }
+    .footer .logo { font-size: 1.6rem; margin: 0 auto 30px; justify-content: center; }
+    .footer .logo::before { width: 42px; height: 42px; font-size: 1rem; }
+
+    .nav-links { display: flex; gap: 26px; margin-left: auto; }
+    .nav-links a { color: #c3cbd4; font-size: .92rem; font-weight: 600; }
+    .nav-links a:hover { color: #fff; }
+
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0 22px;
+      border-radius: 12px; border: 1px solid transparent;
+      font-size: .93rem; font-weight: 800;
+      transition: background .2s ease, border-color .2s ease;
+    }
+    .button-primary { background: var(--brand-grad); color: #fff; box-shadow: 0 10px 30px rgba(63,107,255,.28); }
+    .button-primary:hover { filter: brightness(1.08); }
+    .button-ghost { border-color: var(--line-2); color: var(--text); }
+    .button-ghost:hover { border-color: rgba(63,107,255,.5); }
+    .nav .button { min-height: 42px; padding: 0 16px; border-color: rgba(63,107,255,.4); color: var(--gold-2); }
+
+    /* Hero */
+    .hero { padding: calc(var(--header-h) + clamp(56px, 8vw, 110px)) 0 clamp(70px, 8vw, 110px); }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr);
+      gap: clamp(40px, 6vw, 80px);
+      align-items: center;
+    }
+    .hero h1 { max-width: 14ch; }
+    .hero .lead { font-size: clamp(1.05rem, 1.4vw, 1.2rem); color: #aeb7c1; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .hero-facts {
+      display: flex; flex-wrap: wrap; gap: 10px 26px;
+      margin: 36px 0 0; padding: 22px 0 0;
+      border-top: 1px solid var(--line);
+      list-style: none;
+      color: #c9d0d8; font-size: .9rem; font-weight: 600;
+    }
+    .hero-facts li { display: flex; align-items: center; gap: 9px; }
+    .hero-facts li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--sage); }
+
+    .phone {
+      justify-self: center;
+      width: min(100%, 330px);
+      padding: 14px;
+      border: 1px solid var(--line-2);
+      border-radius: 44px;
+      background: #07090c;
+      box-shadow: 0 40px 100px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.03);
+      animation: rise .9s cubic-bezier(.2,.7,.2,1) both;
+    }
+    .screen {
+      border-radius: 32px;
+      padding: 22px 18px 26px;
+      background:
+        radial-gradient(circle at 80% 0%, rgba(63,107,255,.16), transparent 45%),
+        linear-gradient(180deg, #151b25, #0f131a);
+    }
+    .notch { width: 92px; height: 22px; margin: -8px auto 18px; border-radius: 0 0 14px 14px; background: #07090c; }
+    .screen-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+    .screen-head strong { font-family: "Space Grotesk", sans-serif; font-size: 1.15rem; }
+    .app-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .app-row {
+      display: grid; grid-template-columns: 42px 1fr; gap: 12px; align-items: center;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,.025);
+    }
+    .app-row.main { border-color: rgba(63,107,255,.4); background: rgba(63,107,255,.07); }
+    .app-icon {
+      display: grid; place-items: center;
+      width: 42px; height: 42px; border-radius: 12px;
+      font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: .95rem;
+      color: #10141a;
+    }
+    .app-row b { display: block; font-size: .92rem; }
+    .app-row small { display: block; color: var(--muted); font-size: .74rem; line-height: 1.35; }
+    .i-vital { background: var(--brand-grad); color: #fff; }
+    .i-gluco { background: #5fe3f5; }
+    .i-acel { background: #9fd0ff; }
+    .i-taurus { background: #a98bff; }
+    .i-bull { background: #7f9bff; }
+    .i-red { background: #ff7a6b; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+
+    /* About / Mission */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 90px); align-items: start; }
+    .mission-quote {
+      margin: 0;
+      padding-left: 26px;
+      border-left: 2px solid var(--gold);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+      line-height: 1.2;
+      letter-spacing: -.025em;
+      color: var(--text);
+    }
+    .mission-points { display: grid; gap: 18px; margin-top: 34px; }
+    .mission-points div { padding-top: 18px; border-top: 1px solid var(--line); }
+    .mission-points h3 { font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* Products */
+    .section-head { display: grid; grid-template-columns: 1fr .8fr; gap: 40px; align-items: end; margin-bottom: 52px; }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid var(--line-2);
+      border-radius: 999px;
+      color: #c9d0d8; font-size: .78rem; font-weight: 700;
+    }
+    .includes { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+    .includes li { position: relative; padding-left: 22px; color: #c6cdd5; font-size: .9rem; }
+    .includes li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 2px; background: var(--gold); }
+
+    .plist { display: grid; gap: 12px; }
+    .pitem { border: 1px solid var(--line); border-radius: 20px; background: var(--surface); overflow: hidden; }
+    .pitem[open] { border-color: rgba(63,107,255,.45); }
+    .pitem > summary {
+      display: grid; grid-template-columns: 42px 1fr auto auto 24px; gap: 16px; align-items: center;
+      padding: 18px 22px; font-family: inherit; font-size: inherit; font-weight: inherit;
+    }
+    .pitem > summary::after, .pitem[open] > summary::after { content: none; display: none; }
+    .pitem-title b { display: block; font-family: "Space Grotesk", sans-serif; font-size: 1.25rem; letter-spacing: -.02em; }
+    .pitem-title small { display: block; color: var(--muted); font-size: .9rem; }
+    .chev { width: 12px; height: 12px; border-right: 2px solid var(--gold-2); border-bottom: 2px solid var(--gold-2); transform: rotate(45deg); transition: transform .25s ease; justify-self: center; }
+    .pitem[open] .chev { transform: rotate(-135deg); }
+    .pitem-body { display: grid; grid-template-columns: 1.2fr .8fr; gap: 32px; padding: 6px 22px 26px; border-top: 1px solid var(--line); }
+    .pitem p { padding: 0; }
+    .pitem-info { padding-top: 20px; }
+    .pitem-info h4 { margin: 22px 0 4px; font-size: .95rem; color: var(--text); }
+    .pitem-info .includes { margin-top: 8px; }
+    .buy { margin-top: 20px; padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.025); align-self: start; }
+    .buy-step { color: var(--text); font-weight: 700; font-size: .92rem; }
+    .buy-step + .langs { margin-top: 10px; }
+    .langs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .lang input { position: absolute; opacity: 0; pointer-events: none; }
+    .lang span { display: inline-block; padding: 9px 16px; border: 1px solid var(--line-2); border-radius: 999px; font-size: .9rem; font-weight: 700; cursor: pointer; transition: background .2s, border-color .2s; }
+    .lang input:checked + span { background: var(--brand-grad); border-color: transparent; color: #fff; }
+    .lang input:focus-visible + span { outline: 2px solid var(--gold-2); outline-offset: 3px; }
+    .price { margin: 8px 0 0; font-family: "Space Grotesk", sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--text); }
+    .price:empty { display: none; }
+    .cta { width: 100%; margin-top: 12px; }
+    .cta[aria-disabled="true"] { background: var(--surface-2); color: var(--muted); box-shadow: none; cursor: not-allowed; }
+    .cta.nudge { animation: nudge .35s; }
+    @keyframes nudge { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+    .tag.soon { border-color: rgba(127,224,196,.45); color: var(--sage); }
+    .lang input:disabled + span { opacity: .45; cursor: not-allowed; }
+    .protocol-box { margin-top: 22px; padding: 18px 20px; border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 12px; background: rgba(63,107,255,.05); }
+    .protocol-box h4 { margin: 0 0 6px !important; }
+    .names { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+    .names li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: .92rem; }
+    .names li:last-child { border-bottom: 0; }
+    .names span { color: var(--muted); }
+    .invoice-name { margin-top: 4px; font-size: .88rem; color: var(--muted); }
+    .invoice-name:empty { display: none; }
+    .invoice-name b { color: var(--text); }
+    .buy-note b { color: var(--muted); }
+    .buy-note { margin-top: 12px; font-size: .8rem; color: var(--muted-2); }
+    .buy-note a { color: var(--gold-2); text-decoration: underline; }
+    @media (max-width: 980px) { .pitem-body { grid-template-columns: 1fr; gap: 0; } }
+    @media (max-width: 640px) {
+      .pitem > summary { grid-template-columns: 42px 1fr auto 20px; padding: 16px; }
+      .pitem > summary .tag { display: none; }
+      .pitem > summary .tag.soon { display: inline-block; }
+      .pitem-body { padding: 4px 16px 20px; }
+    }
+
+    /* Access steps */
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 0; padding: 0; list-style: none; counter-reset: step; }
+    .steps li {
+      counter-increment: step;
+      padding: 26px 22px;
+      border-top: 2px solid transparent;
+      border-image: var(--brand-grad) 1;
+      background: rgba(255,255,255,.02);
+      border-radius: 0 0 16px 16px;
+    }
+    .steps li::before {
+      content: counter(step);
+      display: block; margin-bottom: 36px;
+      font-family: "Space Grotesk", sans-serif; font-size: 2.2rem; font-weight: 700; color: var(--gold-2); line-height: 1;
+    }
+    .steps h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .steps p { font-size: .9rem; }
+
+    .notice {
+      margin-top: 40px;
+      padding: 22px 24px;
+      border: 1px solid rgba(156,195,173,.3);
+      border-radius: 16px;
+      background: rgba(156,195,173,.05);
+    }
+    .notice strong { display: block; margin-bottom: 4px; color: var(--sage); }
+    .notice p { max-width: none; font-size: .92rem; }
+
+    /* Guarantee */
+    .guarantee {
+      display: grid; grid-template-columns: auto 1fr auto; gap: 26px; align-items: center;
+      padding: clamp(24px, 4vw, 36px);
+      border: 1px solid rgba(127,224,196,.35);
+      border-radius: 22px;
+      background: radial-gradient(circle at 0% 0%, rgba(127,224,196,.1), transparent 45%), var(--surface);
+    }
+    .guarantee-badge {
+      display: grid; place-items: center; text-align: center;
+      width: 96px; height: 96px; border-radius: 50%;
+      border: 2px solid var(--sage);
+      font-family: "Space Grotesk", sans-serif; color: var(--sage); line-height: 1.05;
+    }
+    .guarantee-badge b { display: block; font-size: 2rem; }
+    .guarantee-badge span { font-size: .72rem; font-weight: 700; letter-spacing: .08em; }
+    .guarantee h3 { font-size: 1.35rem; margin-bottom: 6px; }
+    .guarantee p { font-size: .95rem; }
+
+    /* FAQ */
+    .faq-list { border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary {
+      list-style: none; position: relative; cursor: pointer;
+      padding: 22px 44px 22px 0;
+      font-family: "Space Grotesk", sans-serif; font-size: 1.05rem; font-weight: 600;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.4rem; }
+    details[open] summary::after { content: "–"; }
+    details p { padding: 0 40px 22px 0; }
+
+    /* Support */
+    .support-card {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+      padding: clamp(30px, 5vw, 60px);
+      border: 1px solid rgba(63,107,255,.3);
+      border-radius: 26px;
+      background: radial-gradient(circle at 90% 10%, rgba(63,107,255,.12), transparent 35%), var(--surface);
+    }
+    .contact-list { margin: 0; display: grid; gap: 18px; }
+    .contact-list div { padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+    .contact-list dt { color: var(--muted-2); font-size: .85rem; font-weight: 700; }
+    .contact-list dd { margin: 2px 0 0; font-weight: 600; }
+    .contact-list a { color: var(--gold-2); }
+
+    /* Footer */
+    .footer { padding: 60px 0 36px; border-top: 1px solid var(--line); background: #06080b; text-align: center; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 0; }
+    .footer-links a { color: #e4e8ec; font-size: .92rem; text-decoration: underline; text-underline-offset: 3px; padding: 0 14px; border-left: 1px solid #3a414b; }
+    .footer-links a:first-child { border-left: 0; }
+    .footer-links a:hover { color: var(--gold-2); }
+    .corporate { margin: 30px auto 0; color: #7f8893; font-size: .82rem; line-height: 1.8; max-width: none; }
+    .footer-notice { margin: 26px auto 0; max-width: 980px; color: #8d96a1; font-size: .8rem; line-height: 1.7; }
+
+    /* Legal pages */
+    .legal { display: none; position: fixed; inset: 0; z-index: 2000; overflow-y: auto; background: var(--bg); }
+    .legal:target { display: block; }
+    .legal-bar {
+      position: sticky; top: 0; z-index: 2;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      padding: 16px 20px;
+      background: rgba(10,12,16,.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    .legal-body { width: min(calc(100% - 40px), 780px); margin: 0 auto; padding: 56px 0 90px; }
+    .legal-body h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+    .legal-body .updated { margin-top: 10px; color: var(--muted-2); font-size: .88rem; }
+    .legal-body h2 { font-size: 1.35rem; max-width: none; margin: 38px 0 10px; letter-spacing: -.02em; }
+    .legal-body p, .legal-body li { color: #b3bcc6; font-size: .98rem; max-width: none; }
+    .legal-body p + p { margin-top: 12px; }
+    .legal-body ul { padding-left: 20px; margin: 10px 0 0; }
+    .legal-body li + li { margin-top: 6px; }
+    .legal-body a { color: var(--gold-2); text-decoration: underline; }
+    .legal-body .summary-box {
+      margin-top: 26px; padding: 20px 22px;
+      border: 1px solid rgba(127,224,196,.35); border-radius: 14px;
+      background: rgba(127,224,196,.06);
+    }
+    .legal-body .summary-box p { color: var(--text); }
+
+
+    /* Cookie banner */
+    .cookie { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 3000; display: none; max-width: 720px; margin: 0 auto; padding: 18px 20px; border: 1px solid var(--line-2); border-radius: 16px; background: var(--surface); box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+    .cookie.show { display: block; }
+    .cookie p { max-width: none; font-size: .88rem; }
+    .cookie a { color: var(--gold-2); text-decoration: underline; }
+    .cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .cookie-actions .button { min-height: 40px; padding: 0 16px; font-size: .88rem; }
+
+    @media (max-width: 980px) {
+      .nav-links { display: none; }
+      .nav .button { margin-left: auto; }
+      .hero-grid, .two-col, .section-head, .support-card { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: repeat(2, 1fr); }
+      .guarantee { grid-template-columns: auto 1fr; }
+      .guarantee .button { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 640px) {
+      :root { --header-h: 66px; }
+      .container { width: min(calc(100% - 28px), var(--container)); }
+      .logo { font-size: 1.15rem; }
+      .logo::before { width: 32px; height: 32px; }
+      .steps { grid-template-columns: 1fr; }
+      .hero-actions .button { flex: 1 1 100%; }
+      .footer-links a { border-left: 0; padding: 4px 10px; }
+      .guarantee { grid-template-columns: 1fr; justify-items: start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .phone { animation: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="TaurusCorp, home"><span class="logo">Taurus<em>Corp</em></span></a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About us</a>
+        <a href="#products">Products</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#refund">Refunds</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="button" href="#support">Support</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Everyday wellness webapps for men.</h1>
+          <p class="lead">
+            TaurusCorp builds educational webapps on daily routines, lower-sugar eating, home workouts and
+            sleep habits. Everything is delivered as a webapp and sent to your email right after payment.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">See our webapps</a>
+            <a class="button button-ghost" href="#how-it-works">How access works</a>
+          </div>
+
+          <ul class="hero-facts">
+            <li>Instant access</li>
+            <li>Phone and desktop</li>
+            <li>No download</li>
+            <li>30-day refund</li>
+          </ul>
+        </div>
+
+        <div class="phone" aria-label="Example of the member area with the webapps">
+          <div class="screen">
+            <div class="notch" aria-hidden="true"></div>
+            <div class="screen-head">
+              <strong>My apps</strong>
+              <span class="logo-icon" aria-hidden="true">TC</span>
+            </div>
+            <ul class="app-list">
+              <li class="app-row main"><span class="app-icon i-vital">P</span><span><b>Men's Daily Protocol</b><small>Main program · 15 days</small></span></li>
+              <li class="app-row"><span class="app-icon i-red">R</span><span><b>RedProtocoll</b><small>Lycopene-rich eating · monthly</small></span></li>
+              <li class="app-row"><span class="app-icon i-gluco">G</span><span><b>GlucoMax</b><small>Eating habits · 7 days</small></span></li>
+              <li class="app-row"><span class="app-icon i-acel">A</span><span><b>Accelerator</b><small>Routine and micro-habits · 14 days</small></span></li>
+              <li class="app-row"><span class="app-icon i-bull">B</span><span><b>BullMode</b><small>Home strength · 4 weeks</small></span></li>
+              <li class="app-row"><span class="app-icon i-taurus">T</span><span><b>Taurus</b><small>Sleep routine · 7 nights</small></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Mission -->
+    <section class="block block-alt" id="about">
+      <div class="container two-col">
+        <div>
+          <span class="kicker">About us</span>
+          <h2>Simple digital products for better routines.</h2>
+          <p class="lead">
+            TaurusCorp is a brand of vSales Tech LLC, a Wyoming (USA) limited liability company that creates and
+            sells educational webapps about men's everyday wellness. We turn practical guidance on routine, eating and physical
+            activity into organized content that is easy to access and put into practice.
+          </p>
+          <p class="lead">
+            We serve customers internationally, with content available in French, Italian and English.
+          </p>
+        </div>
+
+        <div id="mission">
+          <span class="kicker">Our mission</span>
+          <blockquote class="mission-quote">
+            Helping men build a healthier daily routine with clear, practical and responsible information.
+          </blockquote>
+
+          <div class="mission-points">
+            <div>
+              <h3>Educational content</h3>
+              <p>Our webapps teach habits and organize routines. They do not diagnose or treat anything, and they do not promise results.</p>
+            </div>
+            <div>
+              <h3>Transparency</h3>
+              <p>What is described on this page is exactly what you receive, with a clear refund policy.</p>
+            </div>
+            <div>
+              <h3>Simple access</h3>
+              <p>No app to install: just open the link you receive by email in any browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="block" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Products</span>
+            <h2>Our webapps.</h2>
+          </div>
+          <p>
+            Tap a webapp to see the details, choose the content language and continue to checkout.
+            The Men's Daily Protocol is our main program; RedProtocoll and the others are sold separately.
+          </p>
+        </div>
+
+        <div class="plist">
+          <details class="pitem" id="p-protocol" open>
+            <summary>
+              <span class="app-icon i-vital">P</span>
+              <span class="pitem-title"><b>Men's Daily Protocol</b><small>Protocole Masculin · Protocollo Maschile · Men's Daily Protocol</small></span>
+              <span class="tag">Main program</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="pitem-body">
+              <div class="pitem-info">
+                <p>A 15-day program with a simple daily routine: a morning ritual, daily movement and evening habits. Includes a guided recipe for a homemade beetroot morning drink made with common food ingredients.</p>
+                <div class="protocol-box">
+                  <h4>Name in each language</h4>
+                  <p>The program is a guided routine with sequential steps and progress tracking inside the app. It is sold under the name translated into the language you choose:</p>
+                  <ul class="names">
+                    <li><span>Français</span><b>Protocole Masculin</b></li>
+                    <li><span>Italiano</span><b>Protocollo Maschile</b></li>
+                    <li><span>English</span><b>Men's Daily Protocol</b></li>
+                  </ul>
+                </div>
+                <h4>Who it's for</h4>
+                <p>Men who want to organize a healthier routine without drastic changes.</p>
+                <h4>What's inside the app</h4>
+                <ul class="includes"><li>Morning ritual: water, daylight and a morning drink</li><li>Daily movement: walking, squats, push-ups and stretching</li><li>Evening routine: light dinner, screens off and 7–8 hours of sleep</li><li>Guided beetroot morning drink recipe</li><li>Progress tracking inside the app</li></ul>
+              </div>
+              <div class="buy" data-product="protocol">
+                <p class="buy-step">1. Choose the content language</p>
+                <div class="langs" role="radiogroup" aria-label="Men's Daily Protocol language"><label class="lang"><input type="radio" name="lang-protocol" value="fr"><span>Français</span></label><label class="lang"><input type="radio" name="lang-protocol" value="it"><span>Italiano</span></label><label class="lang"><input type="radio" name="lang-protocol" value="en"><span>English</span></label></div>
+                <p class="buy-step">2. Complete checkout</p>
+                <p class="price" data-price></p>
+                <p class="invoice-name" data-invoice-name></p>
+                <a class="button button-primary cta" href="#p-protocol" aria-disabled="true" data-cta>Choose a language</a>
+                <p class="buy-note"><b>Monthly subscription with automatic renewal.</b> Cancel anytime by emailing support, with no fees. Instant webapp access by email once payment is approved. Full refund within 30 days of each charge (<a href="#refund">see policy</a>).</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="pitem" id="p-redprotocoll">
+            <summary>
+              <span class="app-icon i-red">R</span>
+              <span class="pitem-title"><b>RedProtocoll</b><small>Tomato and lycopene-rich eating habits for men</small></span>
+              <span class="tag">Nutrition · Monthly</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="pitem-body">
+              <div class="pitem-info">
+                <p>A guided nutrition program focused on one part of a man's diet: foods rich in lycopene, the natural red pigment found in tomatoes, watermelon and pink grapefruit. Lycopene is a topic of ongoing nutrition research, including studies on men's wellbeing after 40. RedProtocoll turns that topic into simple, practical eating habits, with no promise of any health outcome.</p>
+                <h4>Who it's for</h4>
+                <p>Men, especially over 40, who want to pay closer attention to what they eat as part of taking care of themselves.</p>
+                <h4>What's inside the app</h4>
+                <ul class="includes"><li>Lycopene in food: where it's found and why cooked tomato with olive oil is the classic way to eat it</li><li>Guided recipe for a homemade tomato concentrate</li><li>Weekly list of lycopene-rich foods and simple meal ideas</li><li>A reminder to keep up regular check-ups, including the prostate screenings your doctor recommends</li></ul>
+                <div class="protocol-box">
+                  <h4>Important</h4>
+                  <p>RedProtocoll is educational nutrition content. It does not diagnose, treat or prevent any prostate or other medical condition. If you have urinary symptoms or any health concern, please see a doctor.</p>
+                </div>
+              </div>
+              <div class="buy" data-product="redprotocoll">
+                <p class="buy-step">1. Choose the content language</p>
+                <div class="langs" role="radiogroup" aria-label="RedProtocoll language"><label class="lang"><input type="radio" name="lang-redprotocoll" value="fr"><span>Français</span></label><label class="lang"><input type="radio" name="lang-redprotocoll" value="it"><span>Italiano</span></label><label class="lang"><input type="radio" name="lang-redprotocoll" value="en"><span>English</span></label></div>
+                <p class="buy-step">2. Complete checkout</p>
+                <p class="price" data-price></p>
+                <a class="button button-primary cta" href="#p-redprotocoll" aria-disabled="true" data-cta>Choose a language</a>
+                <p class="buy-note"><b>Monthly subscription with automatic renewal.</b> Cancel anytime by emailing support, with no fees. Instant webapp access by email once payment is approved. Full refund within 30 days of each charge (<a href="#refund">see policy</a>).</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="pitem" id="p-glucomax">
+            <summary>
+              <span class="app-icon i-gluco">G</span>
+              <span class="pitem-title"><b>GlucoMax</b><small>Everyday lower-sugar eating habits</small></span>
+              <span class="tag">Nutrition · 7 days</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="pitem-body">
+              <div class="pitem-info">
+                <p>A 7-day program of simple eating habits to help you cut back on added sugar in your daily meals.</p>
+                <h4>Who it's for</h4>
+                <p>Anyone who wants to improve their eating habits gradually and practically.</p>
+                <h4>What's inside the app</h4>
+                <ul class="includes"><li>A simple morning drink idea with apple cider vinegar</li><li>How to build a balanced plate</li><li>Short walks after meals and swapping sugary drinks</li><li>An evening breathing routine to unwind</li></ul>
+              </div>
+              <div class="buy" data-product="glucomax">
+                <p class="buy-step">1. Choose the content language</p>
+                <div class="langs" role="radiogroup" aria-label="GlucoMax language"><label class="lang"><input type="radio" name="lang-glucomax" value="fr"><span>Français</span></label><label class="lang"><input type="radio" name="lang-glucomax" value="it"><span>Italiano</span></label><label class="lang"><input type="radio" name="lang-glucomax" value="en"><span>English</span></label></div>
+                <p class="buy-step">2. Complete checkout</p>
+                <p class="price" data-price></p>
+                <a class="button button-primary cta" href="#p-glucomax" aria-disabled="true" data-cta>Choose a language</a>
+                <p class="buy-note">Instant webapp access by email once payment is approved. Full refund within 30 days (<a href="#refund">see policy</a>).</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="pitem" id="p-accelerator">
+            <summary>
+              <span class="app-icon i-acel">A</span>
+              <span class="pitem-title"><b>Accelerator</b><small>Morning routine, nutrient-rich foods and micro-habits</small></span>
+              <span class="tag">Add-on · 14 days</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="pitem-body">
+              <div class="pitem-info">
+                <p>A 14-day starter plan built on three pillars: a 10-minute morning routine, everyday nutrient-rich foods and small daily habits.</p>
+                <h4>Who it's for</h4>
+                <p>Anyone who wants a short, structured plan to build consistency.</p>
+                <h4>What's inside the app</h4>
+                <ul class="includes"><li>10-minute routine: daylight, breathing and light exercise</li><li>Everyday foods naturally rich in zinc, magnesium and vitamin D</li><li>5 micro-habits for every day</li></ul>
+              </div>
+              <div class="buy" data-product="accelerator">
+                <p class="buy-step">1. Choose the content language</p>
+                <div class="langs" role="radiogroup" aria-label="Accelerator language"><label class="lang"><input type="radio" name="lang-accelerator" value="fr"><span>Français</span></label><label class="lang"><input type="radio" name="lang-accelerator" value="it"><span>Italiano</span></label><label class="lang"><input type="radio" name="lang-accelerator" value="en"><span>English</span></label></div>
+                <p class="buy-step">2. Complete checkout</p>
+                <p class="price" data-price></p>
+                <a class="button button-primary cta" href="#p-accelerator" aria-disabled="true" data-cta>Choose a language</a>
+                <p class="buy-note">Instant webapp access by email once payment is approved. Full refund within 30 days (<a href="#refund">see policy</a>).</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="pitem" id="p-bullmode">
+            <summary>
+              <span class="app-icon i-bull">B</span>
+              <span class="pitem-title"><b>BullMode</b><small>Home strength training, no equipment</small></span>
+              <span class="tag">Training · 4 weeks</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="pitem-body">
+              <div class="pitem-info">
+                <p>A home strength program with 3 sessions per week and no equipment needed.</p>
+                <h4>Who it's for</h4>
+                <p>Anyone who wants to start training at home with a clear progression.</p>
+                <h4>What's inside the app</h4>
+                <ul class="includes"><li>Weeks 1–2: the basics (squats, push-ups, lunges, plank)</li><li>Weeks 3–4: progression</li><li>Recovery and stretching guidance</li></ul>
+              </div>
+              <div class="buy" data-product="bullmode">
+                <p class="buy-step">1. Choose the content language</p>
+                <div class="langs" role="radiogroup" aria-label="BullMode language"><label class="lang"><input type="radio" name="lang-bullmode" value="fr"><span>Français</span></label><label class="lang"><input type="radio" name="lang-bullmode" value="it"><span>Italiano</span></label><label class="lang"><input type="radio" name="lang-bullmode" value="en"><span>English</span></label></div>
+                <p class="buy-step">2. Complete checkout</p>
+                <p class="price" data-price></p>
+                <a class="button button-primary cta" href="#p-bullmode" aria-disabled="true" data-cta>Choose a language</a>
+                <p class="buy-note">Instant webapp access by email once payment is approved. Full refund within 30 days (<a href="#refund">see policy</a>).</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="pitem" id="p-taurus">
+            <summary>
+              <span class="app-icon i-taurus">T</span>
+              <span class="pitem-title"><b>Taurus</b><small>Sleep routine</small></span>
+              <span class="tag">Sleep · 7 nights</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="pitem-body">
+              <div class="pitem-info">
+                <p>A 7-night routine to build better sleep habits.</p>
+                <h4>Who it's for</h4>
+                <p>Anyone who wants to improve their sleep routine with simple habits.</p>
+                <h4>What's inside the app</h4>
+                <ul class="includes"><li>Bedroom setup</li><li>Evening routine</li><li>Morning routine and a regular schedule</li></ul>
+              </div>
+              <div class="buy" data-product="taurus">
+                <p class="buy-step">1. Choose the content language</p>
+                <div class="langs" role="radiogroup" aria-label="Taurus language"><label class="lang"><input type="radio" name="lang-taurus" value="fr"><span>Français</span></label><label class="lang"><input type="radio" name="lang-taurus" value="it"><span>Italiano</span></label><label class="lang"><input type="radio" name="lang-taurus" value="en"><span>English</span></label></div>
+                <p class="buy-step">2. Complete checkout</p>
+                <p class="price" data-price></p>
+                <a class="button button-primary cta" href="#p-taurus" aria-disabled="true" data-cta>Choose a language</a>
+                <p class="buy-note">Instant webapp access by email once payment is approved. Full refund within 30 days (<a href="#refund">see policy</a>).</p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="block block-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker">How it works</span>
+            <h2>From payment to access in minutes.</h2>
+          </div>
+          <p>All products are delivered as webapps. There is no physical shipping and nothing to install.</p>
+        </div>
+
+        <ol class="steps">
+          <li><h3>Choose a webapp</h3><p>Open a product in the Products section and see what it includes.</p></li>
+          <li><h3>Choose a language</h3><p>Select French, Italian or English. The content is delivered in that language.</p></li>
+          <li><h3>Payment</h3><p>You are taken to a secure checkout to complete your purchase.</p></li>
+          <li><h3>Instant access</h3><p>Once payment is approved, your login arrives by email. Open it on your phone or computer.</p></li>
+        </ol>
+
+        <div class="notice">
+          <strong>Health disclaimer</strong>
+          <p>
+            Our webapps are for educational purposes only. They are not medical advice and do not replace
+            consultation, diagnosis or treatment by a doctor, dietitian or other health professional. Please talk
+            to a professional before changing your diet or starting physical activity, especially if you have a
+            health condition or take medication. Individual experiences vary.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="block" style="padding-bottom:0">
+      <div class="container">
+        <div class="guarantee">
+          <div class="guarantee-badge"><span><b>30</b>DAYS</span></div>
+          <div>
+            <h3>30-day refund guarantee</h3>
+            <p>If the webapp isn't what you expected, request a full refund within 30 days of purchase, no questions asked. For subscriptions, this applies to each monthly charge.</p>
+          </div>
+          <a class="button button-ghost" href="#refund">Read the full policy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block" id="faq">
+      <div class="container two-col">
+        <div>
+          <span class="kicker">Frequently asked questions</span>
+          <h2>Before you buy.</h2>
+          <p class="lead">Can't find your answer? Contact <a href="#support" style="color:var(--gold-2)">support</a>.</p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>How do I receive my product?</summary>
+            <p>As soon as your payment is approved, you receive the link and login details for the webapp at the email used for your purchase. Please also check your spam and promotions folders.</p>
+          </details>
+          <details>
+            <summary>Do I need to install an app?</summary>
+            <p>No. The webapp runs directly in the browser on your phone, tablet or computer. All you need is an internet connection.</p>
+          </details>
+          <details>
+            <summary>Do the webapps replace professional advice?</summary>
+            <p>No. The content is educational and does not replace guidance from health professionals. Never stop or change any treatment or medication on your own.</p>
+          </details>
+          <details>
+            <summary>Which languages are available?</summary>
+            <p>French, Italian and English. You choose the language before checkout, and the webapp is delivered in that language.</p>
+          </details>
+          <details>
+            <summary>Which products are subscriptions? How do I cancel?</summary>
+            <p>The Men's Daily Protocol (Protocole Masculin, Protocollo Maschile or Men's Daily Protocol, depending on the language) and RedProtocoll are monthly subscriptions that renew automatically on the same card. You can cancel at any time by emailing vsalestech.llc@gmail.com. After cancellation there are no further charges, and access continues until the end of the period already paid.</p>
+          </details>
+          <details>
+            <summary>Can I get a refund?</summary>
+            <p>Yes. You can request a full refund within 30 days of purchase (or of each renewal, for subscriptions), as described in our <a href="#refund" style="color:var(--gold-2)">Refund Policy</a>.</p>
+          </details>
+          <details>
+            <summary>I see a charge I don't recognize. What should I do?</summary>
+            <p>The charge appears on your card statement under our company or product name. If you still don't recognize it, please contact us before disputing it with your bank: we'll look into it and, where appropriate, refund you directly.</p>
+          </details>
+          <details>
+            <summary>I didn't receive my access. What should I do?</summary>
+            <p>Email vsalestech.llc@gmail.com with the email address used for your purchase. We reply within 48 business hours.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section class="block" id="support" style="padding-top:0">
+      <div class="container">
+        <div class="support-card">
+          <div>
+            <span class="kicker">Support</span>
+            <h2>Get in touch.</h2>
+            <p class="lead">
+              Questions about access, payments, cancellations or refunds are handled by email and phone, Monday to Friday.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:vsalestech.llc@gmail.com">Email support</a>
+            </div>
+          </div>
+
+          <dl class="contact-list">
+            <div><dt>Email</dt><dd><a href="mailto:vsalestech.llc@gmail.com">vsalestech.llc@gmail.com</a></dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+5574999574249">+55 74 99957-4249</a></dd></div>
+            <div><dt>Response time</dt><dd>Within 48 business hours</dd></div>
+            <div><dt>Business address</dt><dd>525 Randall Ave, Ste 100-411, Cheyenne, WY 82001, USA</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="logo">Taurus<em>Corp</em></span>
+      <nav class="footer-links" aria-label="Company links">
+        <a href="#about">About us</a>
+        <a href="#mission">Our mission</a>
+        <a href="#products">Products</a>
+        <a href="#terms">Terms of use</a>
+        <a href="#privacy">Privacy policy</a>
+        <a href="#refund">Refund policy</a>
+        <a href="#support">Support</a>
+        <a href="#privacy" data-cookie-settings>Cookie settings</a>
+      </nav>
+
+      <p class="corporate">
+        TaurusCorp is a brand operated by vSales Tech LLC · Wyoming limited liability company · Filing ID 2026-002097090<br>
+        525 Randall Ave, Ste 100-411 · Cheyenne, WY 82001 · USA<br>
+        vsalestech.llc@gmail.com · +55 74 99957-4249
+      </p>
+
+      <p class="footer-notice">
+        IMPORTANT NOTICE: Educational content only. Individual experiences vary and no specific outcome is
+        guaranteed. This content is not medical advice and does not replace guidance from a health professional.
+        This website is not affiliated with, endorsed by or associated with Meta (Facebook/Instagram), Google or any
+        other company mentioned. © 2026 vSales Tech LLC (TaurusCorp). All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============ LEGAL PAGES ============ -->
+
+  <section class="legal" id="terms" aria-labelledby="t-terms">
+    <div class="legal-bar">
+      <a href="#home" class="brand" aria-label="TaurusCorp, back to site"><span class="logo">Taurus<em>Corp</em></span></a>
+      <a class="button button-ghost" href="#home">Back to site</a>
+    </div>
+    <div class="legal-body">
+      <h1 id="t-terms">Terms of use</h1>
+      <p class="updated">Last updated: October 2026</p>
+
+      <h2>1. Who we are</h2>
+      <p>These terms govern the use of the webapps sold under the TaurusCorp brand by vSales Tech LLC, a Wyoming limited liability company (Filing ID 2026-002097090), with its business address at 525 Randall Ave, Ste 100-411, Cheyenne, WY 82001, USA ("TaurusCorp", "we", "us"). By purchasing or using any of our products, you agree to these terms.</p>
+
+      <h2>2. What we sell</h2>
+      <p>We sell digital products in webapp format (Men's Daily Protocol, RedProtocoll, GlucoMax, Accelerator, BullMode and Taurus) with educational content about routines, eating habits, physical activity and sleep. Access is sent to the email provided at purchase once payment is approved. No physical products are shipped.</p>
+
+      <h2>3. Nature of the content</h2>
+      <p>All content is for educational and informational purposes only. It is not medical, nutritional or other professional advice, is not intended to diagnose, treat, cure or prevent any disease, and does not replace care from health professionals. Individual experiences vary and no specific outcome is guaranteed.</p>
+
+      <h2>4. Account and access</h2>
+      <ul>
+        <li>Access is personal and non-transferable. Sharing logins, reselling or redistributing the content is not allowed.</li>
+        <li>You are responsible for keeping your login details secure.</li>
+        <li>Access remains available for the period stated on the purchase page.</li>
+      </ul>
+
+      <h2>5. Subscriptions and renewal</h2>
+      <p>The Men's Daily Protocol, sold as Protocole Masculin (French), Protocollo Maschile (Italian) and Men's Daily Protocol (English), and RedProtocoll are monthly subscriptions. Each renews automatically each month on the same payment method until you cancel. The price and billing frequency are shown at checkout before you buy.</p>
+      <p>You may cancel at any time, with no fees, by emailing vsalestech.llc@gmail.com. Cancellation stops future charges, and access remains available until the end of the period already paid.</p>
+
+      <h2>6. Payments</h2>
+      <p>Payments are processed by secure third-party payment providers. We do not store full card details. Prices and currency are shown on the checkout page for each product.</p>
+
+      <h2>7. Intellectual property</h2>
+      <p>All text, videos, images, trademarks and other materials in the webapps belong to vSales Tech LLC or its licensors and are protected by law. You may not copy, reproduce or distribute any part without our written permission.</p>
+
+      <h2>8. Refunds</h2>
+      <p>Refund rules are described in our <a href="#refund">Refund Policy</a>.</p>
+
+      <h2>9. Limitation of liability</h2>
+      <p>To the extent permitted by law, TaurusCorp is not liable for decisions you make based on the educational content, or for temporary unavailability caused by external factors such as internet outages or third-party service failures.</p>
+
+      <h2>10. Governing law</h2>
+      <p>These terms are governed by the laws of the State of Wyoming, USA. If you are a consumer, nothing in these terms takes away the mandatory consumer protections of your country of residence.</p>
+
+      <h2>11. Changes and contact</h2>
+      <p>We may update these terms at any time; the date of the latest update is shown on this page. Questions: vsalestech.llc@gmail.com or +55 74 99957-4249.</p>
+    </div>
+  </section>
+
+  <section class="legal" id="privacy" aria-labelledby="t-privacy">
+    <div class="legal-bar">
+      <a href="#home" class="brand" aria-label="TaurusCorp, back to site"><span class="logo">Taurus<em>Corp</em></span></a>
+      <a class="button button-ghost" href="#home">Back to site</a>
+    </div>
+    <div class="legal-body">
+      <h1 id="t-privacy">Privacy policy</h1>
+      <p class="updated">Last updated: October 2026</p>
+
+      <h2>1. Data controller</h2>
+      <p>vSales Tech LLC (TaurusCorp brand), 525 Randall Ave, Ste 100-411, Cheyenne, WY 82001, USA. Privacy contact: vsalestech.llc@gmail.com.</p>
+
+      <h2>2. Data we collect</h2>
+      <ul>
+        <li>Account and purchase data: name, email, phone number (if provided) and country.</li>
+        <li>Payment data: processed directly by our payment provider. We only receive confirmation and basic transaction details.</li>
+        <li>Usage data: pages visited, device, browser and IP address, through cookies and analytics tools.</li>
+      </ul>
+
+      <h2>3. How we use it</h2>
+      <ul>
+        <li>To provide and maintain your access to the webapps.</li>
+        <li>To provide support and respond to requests.</li>
+        <li>To process payments and refunds and prevent fraud.</li>
+        <li>To comply with legal and tax obligations.</li>
+        <li>To measure and improve our pages and advertising.</li>
+      </ul>
+
+      <h2>4. Legal bases</h2>
+      <p>For users in the European Union and the United Kingdom, we process data under the General Data Protection Regulation (GDPR) on the basis of contract performance, legal obligation, legitimate interests and, where required, your consent. We also comply with applicable U.S. privacy laws.</p>
+
+      <h2>5. Sharing and international transfers</h2>
+      <p>We share data only with providers needed to run our business, such as payment processors, hosting, email delivery and analytics tools. We do not sell personal data. Your data may be processed in the United States and other countries; where required, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+
+      <h2>6. Cookies</h2>
+      <p>We use essential cookies for site functionality. Analytics and advertising cookies (such as the Meta Pixel) are only set if you click "Accept all" in our cookie banner. You can change your choice at any time through the "Cookie settings" link in the footer or in your browser settings.</p>
+
+      <h2>7. Your rights</h2>
+      <p>You may request access, correction, deletion, portability, restriction of or objection to processing, and withdraw consent by emailing vsalestech.llc@gmail.com. Users in the EU/UK may also lodge a complaint with their local data protection authority.</p>
+
+      <h2>8. Retention and security</h2>
+      <p>We keep data only as long as needed for the purposes described and to meet legal obligations, and we use technical and organizational measures to protect it.</p>
+    </div>
+  </section>
+
+  <section class="legal" id="refund" aria-labelledby="t-refund">
+    <div class="legal-bar">
+      <a href="#home" class="brand" aria-label="TaurusCorp, back to site"><span class="logo">Taurus<em>Corp</em></span></a>
+      <a class="button button-ghost" href="#home">Back to site</a>
+    </div>
+    <div class="legal-body">
+      <h1 id="t-refund">Refund and cancellation policy</h1>
+      <p class="updated">Last updated: October 2026</p>
+
+      <div class="summary-box">
+        <p><b>Summary:</b> full refund within 30 calendar days of purchase (or of each subscription renewal), no questions asked. Just email vsalestech.llc@gmail.com.</p>
+      </div>
+
+      <h2>1. Refund window</h2>
+      <p>You may request a full refund for any webapp within 30 (thirty) calendar days of the purchase date, without giving a reason. No fees or deductions are applied to the refunded amount.</p>
+
+      <h2>2. How to request</h2>
+      <p>Email vsalestech.llc@gmail.com, or contact us at +55 74 99957-4249, with:</p>
+      <ul>
+        <li>the name and email used for the purchase;</li>
+        <li>the product you want refunded;</li>
+        <li>the order number, if you have it.</li>
+      </ul>
+      <p>We confirm receipt within 48 business hours.</p>
+
+      <h2>3. Processing time</h2>
+      <p>Once confirmed, the refund is processed within 5 (five) business days to the original payment method. The time for the amount to appear on your statement depends on your card issuer or bank, usually 5 to 10 business days. You'll receive an email when the refund is processed.</p>
+
+      <h2>4. Subscriptions</h2>
+      <p>For subscription products such as the Men's Daily Protocol (Protocole Masculin / Protocollo Maschile / Men's Daily Protocol) and RedProtocoll, the 30-day window applies to the first charge and to each monthly renewal. To stop being charged, request cancellation by email at any time, with no fees. After cancellation there are no further charges, and access continues until the end of the period already paid.</p>
+
+      <h2>5. Didn't receive your access?</h2>
+      <p>If the access email hasn't arrived, check your spam and promotions folders and contact us. We will grant access manually, or you may request a refund.</p>
+
+      <h2>6. Unrecognized charge</h2>
+      <p>The charge appears on your card statement under our company or product name. If you don't recognize a charge, please contact support before opening a dispute with your bank: we'll check and, where appropriate, refund you directly and faster.</p>
+
+      <h2>7. After a refund</h2>
+      <p>Access to the refunded webapp ends. Add-on products bought separately follow their own purchase dates for the refund window.</p>
+
+      <h2>8. EU right of withdrawal</h2>
+      <p>If you live in the European Union, you have a statutory right to withdraw from distance purchases within 14 days. Because our webapps are digital content delivered immediately, you are asked at checkout to agree to immediate delivery, which ends that statutory right once access begins. Our voluntary 30-day refund guarantee above still applies in full.</p>
+
+      <h2>9. Consumer rights</h2>
+      <p>This policy does not limit any rights you have under the consumer protection laws of your country of residence.</p>
+
+      <h2>10. Contact</h2>
+      <p>TaurusCorp · vSales Tech LLC<br>525 Randall Ave, Ste 100-411 · Cheyenne, WY 82001 · USA<br>vsalestech.llc@gmail.com · +55 74 99957-4249</p>
+    </div>
+  </section>
+
+
+  <div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Cookie consent">
+    <p>We use essential cookies to run this site and, with your consent, analytics and advertising cookies to measure and improve our pages. You can change your choice at any time. See our <a href="#privacy">Privacy policy</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="button button-primary" data-consent="accepted">Accept all</button>
+      <button type="button" class="button button-ghost" data-consent="rejected">Essential only</button>
+    </div>
+  </div>
+
+  <script>
+    /* ====== CHECKOUTS: checkout link for each product per language ======
+       price is optional (e.g. "€ 37"). If left empty, no price is shown.
+       soon: true shows the product as "Coming soon". Remove it once links are added. */
+    const CHECKOUT = {
+      protocol:    { price: "", names: { fr: "Protocole Masculin", it: "Protocollo Maschile", en: "Men's Daily Protocol" }, fr: "", it: "", en: "" },
+      glucomax:    { price: "", fr: "", it: "", en: "" },
+      accelerator: { price: "", fr: "", it: "", en: "" },
+      redprotocoll:{ price: "", fr: "", it: "", en: "" },
+      bullmode:    { price: "", fr: "", it: "", en: "" },
+      taurus:      { price: "", fr: "", it: "", en: "" }
+    };
+    const LABEL = { fr: "French", it: "Italian", en: "English" };
+
+    document.querySelectorAll(".buy").forEach(box => {
+      const id = box.dataset.product;
+      const data = CHECKOUT[id] || {};
+      const cta = box.querySelector("[data-cta]");
+      const price = box.querySelector("[data-price]");
+      if (data.price) price.textContent = data.price;
+
+      if (data.soon) {
+        const item = box.closest(".pitem");
+        const badge = document.createElement("span");
+        badge.className = "tag soon"; badge.textContent = "Coming soon";
+        item.querySelector("summary .tag").after(badge);
+        box.querySelectorAll("input[type=radio]").forEach(r => r.disabled = true);
+        cta.textContent = "Available soon";
+        box.querySelector(".buy-note").textContent = "This webapp is in final preparation and is not yet on sale.";
+        cta.addEventListener("click", e => e.preventDefault());
+        return;
+      }
+
+      box.querySelectorAll("input[type=radio]").forEach(r => r.addEventListener("change", () => {
+        const url = data[r.value];
+        const inv = box.querySelector("[data-invoice-name]");
+        if (inv && data.names) inv.innerHTML = "Product name: <b>" + data.names[r.value] + "</b>";
+        if (url) {
+          cta.href = url;
+          cta.removeAttribute("aria-disabled");
+          cta.textContent = "Go to checkout (" + LABEL[r.value] + ")";
+        } else {
+          cta.href = "#p-" + id;
+          cta.setAttribute("aria-disabled", "true");
+          cta.textContent = "Checkout opening soon";
+        }
+      }));
+
+      cta.addEventListener("click", e => {
+        if (cta.getAttribute("aria-disabled") === "true") {
+          e.preventDefault();
+          cta.classList.remove("nudge"); void cta.offsetWidth; cta.classList.add("nudge");
+          box.querySelector(".langs input")?.focus();
+        }
+      });
+    });
+
+    /* ====== COOKIE CONSENT ======
+       Load analytics/ad pixels (e.g. Meta Pixel) ONLY inside loadMarketing(),
+       so they run only after the visitor clicks "Accept all". */
+    function loadMarketing() {
+      /* paste the Meta Pixel / analytics code here */
+    }
+    (function () {
+      const box = document.getElementById("cookie");
+      let choice = null;
+      try { choice = localStorage.getItem("cookie-consent"); } catch (e) {}
+      if (choice === "accepted") loadMarketing();
+      if (!choice) box.classList.add("show");
+      box.querySelectorAll("[data-consent]").forEach(btn => btn.addEventListener("click", () => {
+        const v = btn.dataset.consent;
+        try { localStorage.setItem("cookie-consent", v); } catch (e) {}
+        box.classList.remove("show");
+        if (v === "accepted") loadMarketing();
+      }));
+      document.querySelectorAll("[data-cookie-settings]").forEach(a => a.addEventListener("click", e => {
+        e.preventDefault(); box.classList.add("show");
+      }));
+    })();
+  </script>
+</body>
+</html>
