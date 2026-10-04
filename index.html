@@ -534,7 +534,7 @@
             activity into organized content that is easy to access and put into practice.
           </p>
           <p class="lead">
-            We serve customers internationally, with content available in French, Italian and English.
+            We serve customers internationally, with content currently available in French. Italian and English versions are in preparation.
           </p>
         </div>
 
@@ -589,7 +589,7 @@
                 <p>A 15-day program with a simple daily routine: a morning ritual, daily movement and evening habits. Includes a guided recipe for a homemade beetroot morning drink made with common food ingredients.</p>
                 <div class="protocol-box">
                   <h4>Content language</h4>
-                  <p>Protocole Masculin is a guided routine with sequential steps and progress tracking inside the app. The product name is the same in every market; the content is delivered in the language you choose: French, Italian or English.</p>
+                  <p>Protocole Masculin is a guided routine with sequential steps and progress tracking inside the app. The product name is the same in every market; the content is currently available in French, with Italian and English versions in preparation.</p>
                 </div>
                 <h4>Who it's for</h4>
                 <p>Men who want to organize a healthier routine without drastic changes.</p>
@@ -759,7 +759,7 @@
 
         <ol class="steps">
           <li><h3>Choose a webapp</h3><p>Open a product in the Products section and see what it includes.</p></li>
-          <li><h3>Choose a language</h3><p>Select French, Italian or English. The content is delivered in that language.</p></li>
+          <li><h3>Choose a language</h3><p>Select the content language. French is available now; Italian and English are coming soon.</p></li>
           <li><h3>Payment</h3><p>You are taken to a secure checkout to complete your purchase.</p></li>
           <li><h3>Instant access</h3><p>Once payment is approved, your login arrives by email. Open it on your phone or computer.</p></li>
         </ol>
@@ -814,7 +814,7 @@
           </details>
           <details>
             <summary>Which languages are available?</summary>
-            <p>French, Italian and English. You choose the language before checkout, and the webapp is delivered in that language.</p>
+            <p>All webapps on sale are currently available in French. Italian and English versions are in preparation; until they launch, those options show "Coming soon" and cannot be purchased.</p>
           </details>
           <details>
             <summary>Which products are subscriptions? How do I cancel?</summary>
@@ -1052,9 +1052,9 @@
        price is optional (e.g. "€ 37"). If left empty, no price is shown.
        soon: true shows the product as "Coming soon". Remove it once links are added. */
     const CHECKOUT = {
-      protocol:    { price: "€23/month", names: { fr: "Protocole Masculin", it: "Protocole Masculin", en: "Protocole Masculin" }, fr: "https://buy.stripe.com/9B6cN63wDh053LKcq57wA00", it: "https://buy.stripe.com/9B6cN63wDh053LKcq57wA00", en: "https://buy.stripe.com/9B6cN63wDh053LKcq57wA00" },
-      glucomax:    { price: "€59", fr: "https://buy.stripe.com/cNi4gA7MTbFLdmkfCh7wA01", it: "https://buy.stripe.com/cNi4gA7MTbFLdmkfCh7wA01", en: "https://buy.stripe.com/cNi4gA7MTbFLdmkfCh7wA01" },
-      accelerator: { price: "€48", names: { fr: "Accélérateur", it: "Accélérateur", en: "Accélérateur" }, fr: "https://buy.stripe.com/bJe4gA0krfW14POgGl7wA02", it: "https://buy.stripe.com/bJe4gA0krfW14POgGl7wA02", en: "https://buy.stripe.com/bJe4gA0krfW14POgGl7wA02" },
+      protocol:    { price: "€23/month", names: { fr: "Protocole Masculin", it: "Protocole Masculin", en: "Protocole Masculin" }, fr: "https://buy.stripe.com/9B6cN63wDh053LKcq57wA00", it: "", en: "" },
+      glucomax:    { price: "€59", fr: "https://buy.stripe.com/cNi4gA7MTbFLdmkfCh7wA01", it: "", en: "" },
+      accelerator: { price: "€48", names: { fr: "Accélérateur", it: "Accélérateur", en: "Accélérateur" }, fr: "https://buy.stripe.com/bJe4gA0krfW14POgGl7wA02", it: "", en: "" },
       redprotocoll:{ soon: true, price: "", fr: "", it: "", en: "" },
       bullmode:    { soon: true, price: "", fr: "", it: "", en: "" },
       taurus:      { soon: true, price: "", fr: "", it: "", en: "" }
@@ -1091,7 +1091,7 @@
         } else {
           cta.href = "#p-" + id;
           cta.setAttribute("aria-disabled", "true");
-          cta.textContent = "Checkout opening soon";
+          cta.textContent = "Coming soon in this language";
         }
       }));
 
